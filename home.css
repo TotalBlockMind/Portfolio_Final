@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid #1e293b;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3b82f6;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #e2e8f0;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #3b82f6;
+}
+
+
+.menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    color: #e2e8f0;
+    cursor: default; 
+}
+
+.hore {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    gap: 5px;
+}
+
+.hore-content {
+    flex: 1.2;
+}
+
+.horo-image {
+   flex: 1;
+}
+
+.horo-image img {
+    max-width: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid #3b82f6;
+    border-radius: 10px;
+}
+
+.greeting {
+    color: #3b82f6;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.tagline {
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #3b82f6;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.skills {
+    background-color: #1e293b;
+    padding: 60px 0;
+    border-radius: 10px;
+    margin: 40px 0;
+}
+
+.skills h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.skill-card {
+    background-color: #0f172a;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.skill-card i {
+    font-size: 2rem;
+    color: #3b82f6;
+    margin-bottom: 15px;
+}
+
+.about {
+    padding: 60px 0;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-item {
+    background-color: #1e293b;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.about-item summary {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    list-style: none;
+}
+
+.about-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.about-item summary i {
+    transition: transform 0.3s;
+}
+
+.about-item[open] summary i {
+    transform: rotate(180deg);
+}
+
+.about-answer {
+    padding: 0 20px 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0;
+    border-top: 1px solid #1e293b;
+    margin-top: 60px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #e2e8f0;
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+.languages {
+    background-color: #1e293b;
+    padding: 60px 0;
+    border-radius: 10px;
+    margin: 40px 0;
+}
+
+.languages h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.languages-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.language-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    transition: transform 0.3s;
+}
+
+.language-item:hover {
+    transform: translateY(-5px);
+}
+
+.language-item i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #3b82f6;
+}
+
+.language-item span {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+.fa-html5 { 
+    color: #e34f26 !important; }
+.fa-css3-alt { 
+    color: #2965f1 !important; }
+.fa-js { 
+    color: #f7df1e !important; }
+.fa-java {
+     color: #007396 !important; }
+.fa-microsoft { color: #7db700 !important; }
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .menu-icon {
+        display: block; 
+    }
+    
+    nav {
+        justify-content: space-between; 
+    }
+    
+    .hore {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 0;
+    }
+    img{
+        margin-top: 15px;
+    }
+    .buttons {
+        justify-content: center;
+    }
+    
+    .languages-container {
+        gap: 20px;
+    }
+    
+    .language-item {
+        width: 80px;
+    }
+    
+    .language-item i {
+        font-size: 2.5rem;
+    }
+}
